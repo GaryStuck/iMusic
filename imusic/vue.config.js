@@ -89,7 +89,18 @@ module.exports = {
     // 开启 CSS source maps?是否在构建样式地图，false将提高构建速度
     sourceMap: false,
     // css预设器配置项
-    loaderOptions: {},
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          modifyVars: {
+            'primary-color': '#1DA57A',
+            'link-color': '#1DA57A',
+            'border-radius-base': '2px'
+          },
+          javascriptEnabled: true
+        }
+      }
+    },
     // 启用 CSS modules for all css / pre-processor files.
     modules: false
   },

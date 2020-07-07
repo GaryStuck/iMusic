@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">
-        <span class="icon iconfont iconall-fill"></span>
-      </router-link>
-    </div>
+    <setting-sys></setting-sys>
     <router-view/>
   </div>
 </template>
-
+<script>
+import SettingSys from './components/setting-sys'
+export default {
+  components: { SettingSys }
+}
+</script>
 <style lang="scss" scoped>
   @import "common/scss/variable.scss";
   #app {
