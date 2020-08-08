@@ -13,19 +13,19 @@ module.exports = {
       warnings: false,
       errors: false
     },
-    proxy: {
-      '/': {
-        // 目标 API 地址
-        target: 'http://localhost:3000',
-        // target: process.env.VUE_APP_URL,
-        // 如果要代理 websockets
-        ws: true,
-        changeOrigin: true, // 允许websockets跨域
-        pathRewrite: {
-          '/': ''
-        }
-      }
-    },
+    // proxy: {
+    //   '/': {
+    //     // 目标 API 地址
+    //     target: 'http://localhost:3000',
+    //     // target: process.env.VUE_APP_URL,
+    //     // 如果要代理 websockets
+    //     ws: true,
+    //     changeOrigin: true, // 允许websockets跨域
+    //     pathRewrite: {
+    //       '/': ''
+    //     }
+    //   }
+    // },
     // 代理转发配置，用于调试环境
     disableHostCheck: true
   },

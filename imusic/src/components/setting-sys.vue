@@ -1,25 +1,22 @@
 <template>
   <div class="sys">
-    <router-link to="sys/layer">
       <sys-header></sys-header>
-    </router-link>
+      <section>
+        <recommend></recommend>
+      </section>
   </div>
 </template>
 
 <script type="application/javascript">
 import Left from './sys/left'
 import SysHeader from '../views/header/sys-header'
+import Recommend from '../views/container/recommend/recommend'
 export default {
   name: 'setting-sys',
   // eslint-disable-next-line vue/no-unused-components
-  components: { SysHeader, Left }
+  components: { Recommend, SysHeader, Left }
 }
-document.addEventListener('DOMContentLoad', function () {
-  const html = document.querySelector('html')
-  let fontSize = window.innerWidth / 10
-  fontSize = fontSize > 50 ? 50 : fontSize
-  html.style.fontSize = fontSize + 'px'
-})
+
 </script>
 
 <style lang="scss" scoped>

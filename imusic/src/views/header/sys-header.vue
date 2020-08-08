@@ -1,6 +1,5 @@
 <template>
   <div class="sysHeader">
-    <a-button type="primary">button</a-button>
     <router-link tag="div" class="sys-tab-item" to="/recommend">
       <span class="sys-tab-link">
         <span class="iconfont iconhot">

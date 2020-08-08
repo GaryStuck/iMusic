@@ -2,10 +2,10 @@ export const routes = [
   {
     path: '/',
     name: 'recommend',
-    redirect: '/sys/layer/recommend'
+    redirect: '/recommend'
   },
   {
-    path: '/sys/layer/recommend',
+    path: '/recommend',
     name: 'recommend',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
