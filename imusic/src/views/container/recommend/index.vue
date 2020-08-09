@@ -12,7 +12,7 @@
     name: 'Recommend',
     data () {
       return {
-        active: true,
+
       }
     },
     methods: {

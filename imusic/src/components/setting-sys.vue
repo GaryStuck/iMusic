@@ -2,8 +2,8 @@
   <div id="app" :style="{'background-image':'url(' + sysUrl + ')'}">
     <div class="system">
       <div class="systemContainer">
-        <sys-header></sys-header>
-        <router-view></router-view>
+<!--        <sys-header></sys-header>-->
+        <layer-header></layer-header>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
 
 <script type="application/javascript">
   import SysHeader from '../views/header/sys-header'
-
+  import LayerHeader from '../views/header/layer-header'
   export default {
     name: 'setting-sys',
     data () {
@@ -20,7 +20,7 @@
       }
     },
     // eslint-disable-next-line vue/no-unused-components
-    components: { SysHeader }
+    components: { SysHeader, LayerHeader }
   }
 </script>
 
