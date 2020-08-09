@@ -3,7 +3,7 @@
     @touchstart="touchstart()"
     @touchend="touchend"
     @touchmove="touchmove"
-  >recommend
+  ><input type="text" value="recomment" @click="notification">
   </div>
 </template>
 
@@ -26,6 +26,11 @@
       touchmove () {
         console.log('touchmove')
       },
+      notification() {
+        this.$notify({
+          content: 'successful'
+        })
+      }
     },
   }
 </script>

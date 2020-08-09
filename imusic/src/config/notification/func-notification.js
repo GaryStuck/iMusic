@@ -1,19 +1,19 @@
-import Notification from './notification.vue';
+import Notification from './notification.vue'
 
 export default {
   extends: Notification,
-  computed:{
-    style() {
+  computed: {
+    style () {
       return {
-        position:'fixed',
-        right:'20px',
-        bottom:`${this.verticalOffset}px`
-      };
+        position: 'fixed',
+        right: '20px',
+        bottom: `${this.verticalOffset}px`
+      }
     }
   },
-  data() {
-    return{
-      verticalOffset:0
+  data () {
+    return {
+      verticalOffset: 0
     }
   }
 }

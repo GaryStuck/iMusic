@@ -10,6 +10,8 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 /* import it */
 import 'css-doodle'
+import notification from './config/notification/index'
+Vue.use(notification)
 Vue.use(VueAwesomeSwiper)
 FastClick.attach(document.body)
 Vue.config.productionTip = false
