@@ -46,8 +46,8 @@
           shortSwipes: false,
           initialSlide: 0,
           resistance: false,
-          observer: false,
-          observeParents: false,
+          observer: true,
+          observeParents: true,
           effect: 'cube',
           pagination: {
             el: '.swiper-pagination',
@@ -192,7 +192,6 @@
 
   .custom-transition .lazy-component-leave-to {
     opacity: 0;
-    transform: scale(0.4) translate(-100%);
   }
 
   .custom-transition .lazy-component-leave-active {

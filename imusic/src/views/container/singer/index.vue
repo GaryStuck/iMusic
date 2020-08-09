@@ -1,12 +1,14 @@
 <template>
-  <swiper ref="opSwiper" :options="opOptions" :id="uId">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <div class="op-pagination" slot="pagination"></div>
-  </swiper>
+  <div class="op-swiper">
+    <swiper ref="opSwiper" :options="opOptions" :id="uId">
+      <swiper-slide style="background-color: #3c484f">Slide 1</swiper-slide>
+      <swiper-slide style="background-color: #f45722">Slide 2</swiper-slide>
+      <swiper-slide style="background-color: #22f450">Slide 3</swiper-slide>
+      <swiper-slide style="background-color: #7222f4">Slide 4</swiper-slide>
+      <swiper-slide style="background-color: #f4ea22">Slide 5</swiper-slide>
+      <div class="op-pagination" slot="pagination"></div>
+    </swiper>
+  </div>
 </template>
 
 <script>
@@ -15,12 +17,12 @@
     data () {
       return {
         opOptions: {
-          effect: 'coverflow',
+          effect: 'fade',
           slidesPerView: 3,
           centeredSlides: true,
           pagination: {
             el: '.op-pagination'
-          },
+          }
           // Some Swiper option/callback...
         }
       }

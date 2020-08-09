@@ -8,7 +8,8 @@ import FastClick from 'fastclick'
 import 'animate.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-
+/* import it */
+import 'css-doodle'
 Vue.use(VueAwesomeSwiper)
 FastClick.attach(document.body)
 Vue.config.productionTip = false

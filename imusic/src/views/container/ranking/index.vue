@@ -1,11 +1,23 @@
 <template>
   <div>
-    Ranking
+    <div>
+      Ranking
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Ranking'
-}
+  import { component as VueLazyComponent } from '@xunlei/vue-lazy-component'
+
+  export default {
+    name: 'Ranking',
+    data () {
+      return {
+        timeout: 200
+      }
+    },
+    components: {
+      VueLazyComponent,
+    }
+  }
 </script>
