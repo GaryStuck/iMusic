@@ -4,14 +4,20 @@ import router from './router'
 import store from './store'
 import './common/scss/index.scss'
 import './common/fonts/iconfont.css'
-import 'ant-design-vue/dist/antd.css'
-import { Button } from 'ant-design-vue'
-Vue.component(Button.name, Button)
+import FastClick from 'fastclick'
+import 'animate.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 
+Vue.use(VueAwesomeSwiper)
+FastClick.attach(document.body)
 Vue.config.productionTip = false
 
-new Vue({
+const app = new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#sys')
+})
+setTimeout(() => {
+  app.$mount('#sys')
+}, 500)

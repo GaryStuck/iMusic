@@ -1,15 +1,30 @@
 export const routes = [
   {
     path: '/',
-    name: 'recommend',
-    redirect: '/recommend'
+    redirect: '/swiper'
   },
   {
     path: '/recommend',
     name: 'recommend',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/container/recommend/recommend')
+    component: () => import('@/views/container/recommend')
+  }, {
+    path: '/swiper',
+    name: 'swiper',
+    component: () => import('@/views/swiper.vue')
+  },
+  {
+    path: '/singer',
+    name: 'singer',
+    component: () => import('@/views/container/singer')
+  },
+  {
+    path: '/ranking',
+    name: 'ranking',
+    component: () => import('@/views/container/ranking')
+  },
+  {
+    path: '/investigation',
+    name: 'investigation',
+    component: () => import('@/views/container/investigation')
   }
 ]

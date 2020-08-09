@@ -1,31 +1,41 @@
 <template>
-  <div class="sys">
-      <sys-header></sys-header>
-      <section>
-        <recommend></recommend>
-      </section>
+  <div id="app" :style="{'background-image':'url(' + sysUrl + ')'}">
+    <div class="system">
+      <div class="systemContainer">
+        <sys-header></sys-header>
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
 <script type="application/javascript">
-import Left from './sys/left'
-import SysHeader from '../views/header/sys-header'
-import Recommend from '../views/container/recommend/recommend'
-export default {
-  name: 'setting-sys',
-  // eslint-disable-next-line vue/no-unused-components
-  components: { Recommend, SysHeader, Left }
-}
+  import SysHeader from '../views/header/sys-header'
 
+  export default {
+    name: 'setting-sys',
+    data () {
+      return {
+        sysUrl: require('../assets/images/jordan-steranka-NcF6MVPW644-unsplash.jpg')
+      }
+    },
+    // eslint-disable-next-line vue/no-unused-components
+    components: { SysHeader }
+  }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "@/common/scss/mixin.scss";
+  @import "./setting-sys.scss";
 
-  .sys{
-    position: relative;
-    margin: 0 auto;
+  #app {
     width: 100%;
-    max-width: px2rem(1080);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
   }
+
 </style>

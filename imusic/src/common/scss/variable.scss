@@ -4,7 +4,7 @@ $color-background: rgba(34, 34, 34, 0.67);
 $color-background-d : rgba(0, 0, 0, 0.3);
 $color-highlight-background : #333;
 $color-dialog-background : #666;
-$color-theme : #ffcd33;
+$color-theme : #FDAE26;
 $color-theme-d : rgba(255, 205, 49, 0.5);
 $color-sub-theme : #d93f30;
 $color-text : #fff;
@@ -19,4 +19,46 @@ $font-size-medium : px2rem(14);
 $font-size-medium-x : px2rem(16);
 $font-size-large : px2rem(18);
 $font-size-large-x : px2rem(22);
-$icon: 'icon iconfont'
+$icon: 'icon iconfont';
+$--blue: #1870dc;
+$--indigo: #7f3ddb;
+$--purple: #9964e3;
+$--pink: #e54e9a;
+$--red: #f45722;
+$--orange: #ff7d47;
+$--yellow: #fda700;
+$--green: #68ca66;
+$--teal: #58d777;
+$--cyan: #17a2b8;
+$--white: #fff;
+$--gray: #798892;
+$--gray-dark: #3c484f;
+$--primary: #1870dc;
+$--secondary: rgba(244, 244, 245, 0.901961);
+$--success: #58d777;
+$--info: #4ebfbb;
+$--warning: #fda700;
+$--danger: #f45722;
+$--light: #f8f9fa;
+$--dark: #3c484f;
+$--primary-light: #dee4ee;
+$--success-light: #ecfaec;
+$--info-light: #f2fafa;
+$--warning-light: #fdf7e6;
+$--danger-light: #fff2ef;
+$--inverse: #002B49;
+$--gray: #d7dfe6;
+$--breakpoint-xs: 0;
+$--breakpoint-sm: 576px;
+$--breakpoint-md: 768px;
+$--breakpoint-lg: 992px;
+$--breakpoint-xl: 1200px;
+$--font-family-sans-serif: "Montserrat",
+sans-serif;
+$--font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace;
